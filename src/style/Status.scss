@@ -1,0 +1,51 @@
+.status {
+  background-color: #e56751;
+  height: 100vh;
+  grid-template-rows: repeat(12, 1fr);
+  
+  p {
+    grid-column: 1/13;
+    grid-row: 2 / 4;
+    text-align: center;
+  }
+  img {
+    grid-column: 1 / 13;
+    grid-row: 4 / 6;
+    margin: auto;
+  }
+  h1 {
+    grid-column: 1 / 13;
+    grid-row: 7 / 8;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    grid-column: 1 / 13;
+    grid-row: 8 / 9;
+    text-align: center;
+  }
+  .status-btn {
+    grid-column: 1 / 13;
+    grid-row: 10 / 11;
+    background: white;
+    color: black;
+    height: 5em;
+    width: 8em;
+    border-radius: 30%;
+    border: 3px solid #e56751;
+    cursor: pointer;
+    &:hover {
+      animation: ani9 0.4s ease-in-out infinite alternate;
+    }
+    @keyframes ani9 {
+      0% {
+        transform: translateY(3px);
+      }
+      100% {
+        transform: translateY(5px);
+      }
+    }
+  }
+}
